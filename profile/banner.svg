@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="The Project Drivers: Complex logic, built to fit.">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7FB8D6" stroke-opacity=".10" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#0E1116" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0E1116" stop-opacity=".85"/>
+    </linearGradient>
+    <path id="route" d="M-20 280 H260 L320 220 H520 L580 280 H760 L820 190 H1000 L1060 250 H1220"/>
+  </defs>
+
+  <rect width="1200" height="360" fill="#0E1116"/>
+  <rect width="1200" height="360" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="40 0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- route lines -->
+  <use href="#route" fill="none" stroke="#2A313C" stroke-width="3"/>
+  <use href="#route" fill="none" stroke="#FF6B1A" stroke-width="3" stroke-dasharray="14 12">
+    <animate attributeName="stroke-dashoffset" from="0" to="-52" dur="1.4s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- nodes pulsing -->
+  <g fill="#0E1116" stroke="#7FB8D6" stroke-width="2">
+    <circle cx="260" cy="280" r="7"><animate attributeName="r" values="7;10;7" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="220" r="7"><animate attributeName="r" values="7;10;7" dur="2.4s" begin=".5s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="280" r="7"><animate attributeName="r" values="7;10;7" dur="2.4s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="190" r="7"><animate attributeName="r" values="7;10;7" dur="2.4s" begin="1.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- driver dot -->
+  <circle r="9" fill="#FF6B1A">
+    <animateMotion dur="7s" repeatCount="indefinite"><mpath href="#route"/></animateMotion>
+  </circle>
+  <circle r="18" fill="#FF6B1A" fill-opacity=".25">
+    <animateMotion dur="7s" repeatCount="indefinite"><mpath href="#route"/></animateMotion>
+    <animate attributeName="r" values="12;22;12" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#fade)" opacity="0"/>
+
+  <!-- text -->
+  <text x="60" y="80" fill="#7FB8D6" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="3">
+    CUSTOM SOFTWARE · AI INTEGRATION · HARDWARE
+    <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+  </text>
+  <text x="60" y="150" fill="#E6E8EB" font-family="'Arial Narrow','Archivo',Arial,sans-serif" font-size="68" font-weight="800">
+    Complex logic,
+    <animate attributeName="opacity" from="0" to="1" dur=".8s" begin=".3s" fill="freeze"/>
+  </text>
+  <text x="60" y="222" fill="#E6E8EB" font-family="'Arial Narrow','Archivo',Arial,sans-serif" font-size="68" font-weight="800">
+    built to <tspan fill="#FF6B1A" font-style="italic">fit</tspan>.
+    <animate attributeName="opacity" from="0" to="1" dur=".8s" begin=".8s" fill="freeze"/>
+  </text>
+  <text x="1140" y="330" text-anchor="end" fill="#9AA3AE" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">THE PROJECT DRIVERS · SINCE 2016</text>
+</svg>

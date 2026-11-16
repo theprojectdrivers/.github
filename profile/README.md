@@ -1,12 +1,10 @@
 <div align="center">
 
-# The Project Drivers
-
-**Custom software, AI integration and hardware for companies whose processes don't fit off-the-shelf tools.**
+<a href="https://theprojectdrivers.com"><img src="https://raw.githubusercontent.com/theprojectdrivers/.github/main/profile/banner.svg" alt="The Project Drivers: Complex logic, built to fit." width="100%"></a>
 
 Founded 2016 · 85+ clients · 6 industries · 3 continents
 
-[![Website](https://img.shields.io/badge/Visit_our_website-theprojectdrivers.com-111?style=for-the-badge)](https://theprojectdrivers.com)
+[![Website](https://img.shields.io/badge/Visit_our_website-theprojectdrivers.com-FF6B1A?style=for-the-badge&labelColor=0E1116)](https://theprojectdrivers.com)
 
 </div>
 
